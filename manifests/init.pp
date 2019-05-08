@@ -88,6 +88,7 @@ class auditbeat (
   Optional[Array[Hash]] $modules                                                      = undef,
   Optional[Array[Hash]] $processors                                                   = undef,
   Optional[Hash] $xpack                                                               = undef,
+  Optional[Hash] $setup                                                               = undef,
 ) {
 
   contain auditbeat::repo

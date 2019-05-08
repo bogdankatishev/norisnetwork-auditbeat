@@ -23,6 +23,7 @@ class auditbeat::config {
     'auditbeat'                 => {
       'modules'                 => $auditbeat::modules,
     },
+    'setup'                     => $auditbeat::setup,
   })
 
   file { '/etc/auditbeat/auditbeat.yml':
